@@ -10,16 +10,16 @@ class EtcdTui < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/aleksandersh/etcd-tui/releases/download/v0.0.1/etcd-tui_ darwin_x86_64.tar.gz"
-      sha256 "03e4c9a58963bd6fa6a3d039fef10459d55564e75a514dbf538d8636c0e0ccfd"
+      url "https://github.com/aleksandersh/etcd-tui/releases/download/v0.0.1/etcd-tui_darwin_amd64.tar.gz"
+      sha256 "b049100e175a04a143e1b11818f33fbfa34d12280f620d8f9670fe5b4d3dceed"
 
       def install
         bin.install "etcd-tui"
       end
     end
     on_arm do
-      url "https://github.com/aleksandersh/etcd-tui/releases/download/v0.0.1/etcd-tui_ darwin_arm64.tar.gz"
-      sha256 "0c05924654e8eeb7255a4559b4c564c58801789ea0c667ffa15c92d08b5e3e6c"
+      url "https://github.com/aleksandersh/etcd-tui/releases/download/v0.0.1/etcd-tui_darwin_arm64.tar.gz"
+      sha256 "bfe62d48b6d0fff6237f8deeaf8809e23d6b518166fb6304b1580862c173f22e"
 
       def install
         bin.install "etcd-tui"
@@ -30,8 +30,8 @@ class EtcdTui < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/aleksandersh/etcd-tui/releases/download/v0.0.1/etcd-tui_ linux_x86_64.tar.gz"
-        sha256 "a3c52911fb5fc280261197e795ec9a1549891b8cc9bebaa03854b4f6a7320318"
+        url "https://github.com/aleksandersh/etcd-tui/releases/download/v0.0.1/etcd-tui_linux_amd64.tar.gz"
+        sha256 "1c662f24df3bd2ac17b712003d49063db05cbc69f290f9278b14a6afbd701c26"
 
         def install
           bin.install "etcd-tui"
@@ -40,8 +40,8 @@ class EtcdTui < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/aleksandersh/etcd-tui/releases/download/v0.0.1/etcd-tui_ linux_armv6.tar.gz"
-        sha256 "e92cad9f78f3504909cbc70fd59783b2b199dc16aff0f6f4e032a3ff2387055d"
+        url "https://github.com/aleksandersh/etcd-tui/releases/download/v0.0.1/etcd-tui_linux_arm.tar.gz"
+        sha256 "85330309a26520039a5eea0bcb0924e17723820c09575558a2386ac5b66a23bd"
 
         def install
           bin.install "etcd-tui"
@@ -50,8 +50,8 @@ class EtcdTui < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/aleksandersh/etcd-tui/releases/download/v0.0.1/etcd-tui_ linux_arm64.tar.gz"
-        sha256 "df6c7b99e6fc54f0f4c8605c9eca79728f8d74f79c89ea98649efd15b6ae3971"
+        url "https://github.com/aleksandersh/etcd-tui/releases/download/v0.0.1/etcd-tui_linux_arm64.tar.gz"
+        sha256 "d195ff18c10d044a294451b1b9b9cec976e62e19e2866696ddcb6630c3e4c0de"
 
         def install
           bin.install "etcd-tui"
